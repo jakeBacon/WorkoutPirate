@@ -46,11 +46,12 @@ public class victoryDefeatSigns : MonoBehaviour {
 			
 			GameInProgress=false;
 			theTimeToNextScene=Time.time;
+
 		}
 
 		if(GameInProgress==false && theTimeToNextScene+3<Time.time){
 			Application.LoadLevel("menuScreen");
-		
+			
 		}
 
 	}
