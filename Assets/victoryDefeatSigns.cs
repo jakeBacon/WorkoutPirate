@@ -49,7 +49,7 @@ public class victoryDefeatSigns : MonoBehaviour {
 
 		}
 
-		if(GameInProgress==false && theTimeToNextScene+3<Time.time){
+		if(GameInProgress==false && theTimeToNextScene+3<Time.time && Input.GetButton("Fire1")){
 			Application.LoadLevel("menuScreen");
 			
 		}

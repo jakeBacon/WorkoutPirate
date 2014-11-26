@@ -3,7 +3,7 @@ using System.Collections;
 
 public class cannonBallBehavior : MonoBehaviour {
 
-	public movement muzzle;
+	//public movement muzzle;
 	public GameObject explosion;
 
 	// Use this for initialization
