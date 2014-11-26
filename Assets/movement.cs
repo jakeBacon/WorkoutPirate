@@ -32,6 +32,7 @@ public class movement : MonoBehaviour {
 	void Update () {
 	
 
+	if (Time.time >= 3) {
 
 		if(Input.GetButtonDown("right") && rowPowerRight>0){
 			rigidbody.AddTorque(new Vector3(0,1,0) * 1,ForceMode.Impulse);
@@ -91,8 +92,9 @@ public class movement : MonoBehaviour {
 		} else if(rowPowerLeft>rowPower){
 			rowPowerLeft=rowPower;
 		}
-
+	
+	}
 		//print (rowCheckerRight);
-		
+
 	}
 }

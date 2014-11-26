@@ -28,14 +28,14 @@ public class firingCannonBalls : MonoBehaviour {
 	void Update () {
 	
 		//print ("value 9 is" + readings.value[9]);
-
-		if(Input.GetButtonDown("Fire1")){
+	
+		if(Input.GetButtonDown("Fire1") && Time.time >= 3){
 		
 			fireTime = Time.time;
 			firingPower=firingPower+700;
 			fireEnabler=true;
 			firing=true;
-
+				
 		}
 
 		//---------------------------------------------

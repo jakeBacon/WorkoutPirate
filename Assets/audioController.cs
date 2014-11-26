@@ -11,12 +11,12 @@ public class audioController : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 
-		for(int i=0; i<=5;i++){
+		for(int i = 0; i<=5;i++){
 			soundSources[i]=Instantiate(audioPlayer, transform.position,transform.rotation) as AudioSource;
 			soundSources[i].audio.clip = audioclips[i];
 		}
 		
-		}
+	}
 	
 
 	
